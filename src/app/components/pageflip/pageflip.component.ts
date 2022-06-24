@@ -17,8 +17,8 @@ export class PageflipComponent implements OnInit {
 
 
     const pageFlip = new PageFlip(document.getElementById('book')!, {
-      width: 600, 
-      height: 800,
+      width: 520, 
+      height: 700,
   });
   
   pageFlip.loadFromHTML(document.querySelectorAll('.my-page')) ;
