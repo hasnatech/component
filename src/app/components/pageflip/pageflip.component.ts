@@ -17,8 +17,8 @@ export class PageflipComponent implements OnInit {
 
 
     const pageFlip = new PageFlip(document.getElementById('book')!, {
-      width: 520, 
-      height: 700,
+      width: 	576, 
+      height: 768,
   });
   
   pageFlip.loadFromHTML(document.querySelectorAll('.my-page')) ;
@@ -28,15 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const pageFlip = new PageFlip(
       document.getElementById("Bbook")!,
       {
-          width: 550, // base page width
-          height: 733, // base page height
+          // width: 550, // base page width
+          // height: 733, // base page height
+          width: 877, 
+      height: 620,
 
           //  size: "stretch",
           // set threshold values:
-          minWidth: 315,
-          maxWidth: 1000,
-          minHeight: 420,
-          maxHeight: 1350,
+          // minWidth: 315,
+          // maxWidth: 1000,
+          // minHeight: 420,
+          // maxHeight: 1350,
 
           maxShadowOpacity: 0.5, // Half shadow intensity
           showCover: true,

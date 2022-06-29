@@ -7,11 +7,22 @@
   }
   
   .flipbook {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
     display: none;
     background-size: cover;
   
   
+    .my-page:nth-child(1){
+      background-color: none !important;
+        color:none !important;
+        border: none !important;
+
+        &.--left { // for left page (property will be added automatically)
+          border-right: none;
+          box-shadow: none;
+          background-color: #fff;
+        }
+    }
     .my-page{
       padding: 20px;
       
